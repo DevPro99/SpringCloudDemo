@@ -1,0 +1,18 @@
+package cn.blogsx.springcloud.cfgbeans;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+/**
+ * @author Alex
+ * @create 2020-02-21 13:04
+ **/
+@Configuration
+public class ConfigBean {
+
+    @Bean
+    public RestTemplate  getRestTemplate() {
+        return new RestTemplate();
+    }
+}
